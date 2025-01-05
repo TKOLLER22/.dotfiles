@@ -1,5 +1,8 @@
 .git
 .gitignore
+
+.tmux/plugins
+
 README.md
 
-tmux
+
