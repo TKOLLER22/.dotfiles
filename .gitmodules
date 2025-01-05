@@ -1,0 +1,3 @@
+[submodule ".catppuccin-kde"]
+    path = .catppuccin-kde
+    url = https://github.com/catppuccin/kde.git
