@@ -1,7 +1,7 @@
 #ZSHRC
 
-#ENV VARIABLES
-export STARSHIP_CONFIG=~/.starship/starship.toml
+#STARSHIP VARIABLES
+export STARSHIP_CONFIG=~/.starship.toml
 export STARSHIP_CACHE=~/.starship/cache
 
 #STARSHIP
