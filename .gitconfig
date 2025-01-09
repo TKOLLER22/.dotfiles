@@ -3,3 +3,5 @@
 [user]
 	name = Tomas Koller
 	email = 111533593+TKOLLER22@users.noreply.github.com
+[url "git@github.com:"]
+	insteadOf = https://github.com/
