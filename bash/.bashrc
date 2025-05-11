@@ -15,6 +15,8 @@ eval "$(zoxide init bash)"
 export STARSHIP_CONFIG=~/.config/starship.toml
 export STARSHIP_CACHE=~/.config/starship/cache
 export EDITOR="nvim"
+export GDK_SCALE=2  # Adjust for HiDPI scaling (double the UI size)
+export GDK_DPI_SCALE=0.5  # Adjust the DPI scale for better clarity
 
 # ALIASES
 alias cd="z"

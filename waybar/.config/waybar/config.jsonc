@@ -1,0 +1,65 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "backlight",
+    "power-profiles-daemon",
+    "battery",
+    "clock"
+  ],
+
+ "battery": {
+  "format": "{capacity}% {icon}",
+  "interval": 10,  // Update every 10 seconds
+  "format-icons": {
+    "charging": "",  // Font Awesome bolt icon for charging (fa-bolt)
+    "discharging": ["", "", "", "", ""]
+  }
+ },
+
+  "clock": {
+    "format": "{:%a %d %b %H:%M}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M:%S}"
+  },
+
+  "backlight": {
+    "device": "intel_backlight", // or try "amdgpu_bl0" or run `ls /sys/class/backlight/`
+    "format": "{percent}% "
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+
+      "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+	"on-click-right":"nm-connection-editor"
+    }
+  }
+

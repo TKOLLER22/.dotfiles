@@ -1,0 +1,58 @@
+* {
+  font-family: Fira Code, JetBrainsMono Nerd Font, monospace;
+  font-size: 14px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+window#waybar {
+  /* background-color: #202735;*/
+  color: #75718E;
+  background-color: transparent;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #465678;
+  background: transparent;
+  border-radius: 6px;
+  margin: 0 2px;
+}
+
+#workspaces button.active {
+  /*color: #202735;*/
+  color: #e3a8b4;
+}
+
+#workspaces button:hover {
+  background: #29344a;
+  color: #e3a8b4;
+}
+
+#battery,
+#clock,
+#pulseaudio,
+#power-profiles-daemon,
+#backlight,
+#network,
+#tray {
+  padding: 0 12px;
+  background: transparent;
+  color: #75718E;
+}
+
+#battery.charging {
+  color: #e3a8b4;
+}
+
+
+#pulseaudio.muted {
+  color: #75718E;
+}
+
+#clock {
+  font-weight: bold;
+  color: #e3a8b4;
+}
+
