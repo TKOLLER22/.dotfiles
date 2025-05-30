@@ -4,12 +4,12 @@ format = """
 [](#202735)\
 $os\
 $username\
-[](bg:#e3a8b4 fg:#202735)\
+[](bg:#a4e6fc fg:#202735)\
 $directory\
-[](fg:#e3a8b4 bg:#75718E)\
+[](fg:#a4e6fc bg:#7098b5)\
 $git_branch\
 $git_status\
-[](fg:#75718E bg:#465678)\
+[](fg:#7098b5 bg:#496b85)\
 $c\
 $rust\
 $golang\
@@ -19,9 +19,9 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:#465678 bg:#29344a)\
+[](fg:#496b85 bg:#1f303d)\
 $docker_context\
-[](fg:#29344a bg:#32383e)\
+[](fg:#1f303d bg:#32383e)\
 $time\
 [](fg:#32383e)\
 $line_break$character"""
@@ -101,7 +101,7 @@ style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:black bg:#e3a8b4"
+style = "fg:black bg:#a4e6fc"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -116,11 +116,11 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol $branch ](fg:white bg:#75718E)]($style)'
+format = '[[ $symbol $branch ](fg:white bg:#7098b5)]($style)'
 
 [git_status]
 style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:white bg:#75718E)]($style)'
+format = '[[($all_status$ahead_behind )](fg:white bg:#7098b5)]($style)'
 
 [nodejs]
 symbol = ""

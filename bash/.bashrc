@@ -40,7 +40,7 @@ export PATH=$HOME/.local/bin:$PATH
 [ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
 [ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
 
-export FZF_CTRL_T_COMMAND="fd . ~/scripts ~/projects --type f --hidden"
+export FZF_CTRL_T_COMMAND="fd . ~/techmania ~/personal --type f --hidden"
 
 
 export NVM_DIR="$HOME/.nvm"

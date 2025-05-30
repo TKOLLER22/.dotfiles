@@ -1,5 +1,5 @@
 * {
-  font-family: Fira Code, JetBrainsMono Nerd Font, monospace;
+  font-family: LigaSFMonoNerdFont;
   font-size: 14px;
   border: none;
   margin: 0;
@@ -8,7 +8,6 @@
 
 window#waybar {
   /* background-color: #202735;*/
-  color: #75718E;
   background-color: transparent;
 }
 
@@ -16,18 +15,11 @@ window#waybar {
   padding: 0 8px;
   color: #465678;
   background: transparent;
-  border-radius: 6px;
-  margin: 0 2px;
 }
 
 #workspaces button.active {
   /*color: #202735;*/
-  color: #e3a8b4;
-}
-
-#workspaces button:hover {
-  background: #29344a;
-  color: #e3a8b4;
+  color: #a4e6fc;
 }
 
 #battery,
@@ -39,20 +31,21 @@ window#waybar {
 #tray {
   padding: 0 12px;
   background: transparent;
-  color: #75718E;
+  color: #FFFFFF;
+
 }
 
 #battery.charging {
-  color: #e3a8b4;
+  color: #a4e6fc;
 }
 
 
 #pulseaudio.muted {
-  color: #75718E;
+  color: #FFFFFF;
 }
 
 #clock {
   font-weight: bold;
-  color: #e3a8b4;
+  color: #7098b5;
 }
 

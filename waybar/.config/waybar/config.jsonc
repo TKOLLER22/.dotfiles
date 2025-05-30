@@ -2,14 +2,13 @@
   "layer": "top",
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": [],
+  "modules-center": ["clock"],
   "modules-right": [
     "network",
     "pulseaudio",
     "backlight",
     "power-profiles-daemon",
-    "battery",
-    "clock"
+    "battery"
   ],
 
  "battery": {
