@@ -4,7 +4,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# 
+export ANDROID_HOME=/opt/android-sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+alias studio='GDK_BACKEND=wayland QT_QPA_PLATFORM=wayland _JAVA_AWT_WM_NONREPARENTING=1 _JAVA_OPTIONS="-Dsun.java2d.uiScale=1" /opt/android-studio/bin/studio.sh'
+
 # PS0='[\u@\h \W]\$ '
 
 # VARS
@@ -15,7 +21,7 @@ eval "$(zoxide init bash)"
 export STARSHIP_CONFIG=~/.config/starship.toml
 export STARSHIP_CACHE=~/.config/starship/cache
 export EDITOR="nvim"
-export GDK_SCALE=2  # Adjust for HiDPI scaling (double the UI size)
+export GDK_SCALE=1  # Adjust for HiDPI scaling (double the UI size)
 export GDK_DPI_SCALE=0.5  # Adjust the DPI scale for better clarity
 
 # ALIASES

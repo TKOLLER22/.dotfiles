@@ -5,15 +5,6 @@ return {
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
-    end,
-  },
-
-  -- test new blink
   { import = "nvchad.blink.lazyspec" },
 
   {
@@ -21,8 +12,25 @@ return {
   	opts = {
   		ensure_installed = {
   			"vim", "lua", "vimdoc",
-       "html", "css"
+        "html", "css", "javascript", "java", "typescript"
   		},
   	},
+  },
+  {
+    "williamboman/mason.nvim",
+    lazy = false, -- Load during startup
+    opts = {},    -- Use default settings
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    dependencies = {
+      "williamboman/mason.nvim",
+      "neovim/nvim-lspconfig",
+    },
+    opts = {
+      ensure_installed = { "lua_ls" }, -- Add desired LSP servers
+      automatic_installation = true,
+    },
   },
 }
